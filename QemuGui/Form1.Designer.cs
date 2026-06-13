@@ -159,8 +159,6 @@ namespace QemuLauncher
             this.pnlPhysicalDrive.Controls.Add(this.cmbPhysicalDrive);
             this.pnlPhysicalDrive.Controls.Add(this.btnRefreshDrives);
             this.pnlPhysicalDrive.Controls.Add(this.btnSetOffline);
-            this.pnlPhysicalDrive.Controls.Add(this.cmbHddController);
-            this.pnlPhysicalDrive.Controls.Add(this.lblHddController);
             this.pnlPhysicalDrive.Location = new System.Drawing.Point(12, 110);
             this.pnlPhysicalDrive.Name = "pnlPhysicalDrive";
             this.pnlPhysicalDrive.Size = new System.Drawing.Size(510, 62);
@@ -208,14 +206,14 @@ namespace QemuLauncher
             "IDE",
             "AHCI",
             "SCSI"});
-            this.cmbHddController.Location = new System.Drawing.Point(106, 30);
+            this.cmbHddController.Location = new System.Drawing.Point(378, 180);
             this.cmbHddController.Name = "cmbHddController";
             this.cmbHddController.Size = new System.Drawing.Size(100, 21);
             this.cmbHddController.TabIndex = 12;
             // 
             // lblHddController
             // 
-            this.lblHddController.Location = new System.Drawing.Point(0, 33);
+            this.lblHddController.Location = new System.Drawing.Point(286, 184);
             this.lblHddController.Name = "lblHddController";
             this.lblHddController.Size = new System.Drawing.Size(100, 23);
             this.lblHddController.TabIndex = 11;
@@ -814,7 +812,9 @@ namespace QemuLauncher
             this.Controls.Add(this.chkEnableSharedFolder);
             this.Controls.Add(this.txtSharedFolder);
             this.Controls.Add(this.btnBrowseSharedFolder);
+            this.Controls.Add(this.cmbHddController);
             this.Controls.Add(this.chkEnableISO);
+            this.Controls.Add(this.lblHddController);
             this.Controls.Add(this.chkEnableInput);
             this.Controls.Add(this.chkEnableBoot);
             this.Controls.Add(this.chkEnableDisk);

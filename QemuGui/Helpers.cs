@@ -1,5 +1,3 @@
-using System;
-
 namespace QemuLauncher
 {
     public class PhysicalDriveInfo

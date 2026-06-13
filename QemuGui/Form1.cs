@@ -35,7 +35,7 @@ namespace QemuLauncher
         private string _pendingAudioBackend;
         private string _pendingNetworkModel;
         private string _pendingPhysicalDriveDisplay;
-        
+
         // ----------------------------------------------------------------
         // Конструкторы
         // ----------------------------------------------------------------
@@ -46,7 +46,7 @@ namespace QemuLauncher
             _cancellationTokenSource = cancellationTokenSource ?? new CancellationTokenSource();
 
             InitializeComponent();
-            
+
             // Защита от выполнения runtime-кода в design-time
             if (!DesignMode)
             {
@@ -144,7 +144,7 @@ namespace QemuLauncher
                 btnBrowseISO.Enabled = chk.Checked;
             }
         }
-                // ----------------------------------------------------------------
+        // ----------------------------------------------------------------
         // QEMU configuration
         // ----------------------------------------------------------------
         private void ReloadQemuConfig()
